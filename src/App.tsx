@@ -25,7 +25,7 @@ interface Pokemon {
       name: string;
     };
   }>;
-  sprites: string;
+  sprites: Sprites;
 }
 function App() {
   const [pokemon, setPokemon] = useState<string>("pikachu");
@@ -72,7 +72,7 @@ function App() {
       </form>
       {pokemonData.length > 0 && pokemonData.map((data) => (
       <div className="pokemon container" key={data.id}>
-        <img src={data.sprites["front_default"]} />
+        <img src={data.sprites.front_default} alt={`${data.name} sprite`} />
         <div className="divTable">
           <div className="divTableBody">
             <div className="divTableRow">
