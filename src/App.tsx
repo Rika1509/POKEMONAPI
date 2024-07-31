@@ -25,7 +25,9 @@ interface Pokemon {
       name: string;
     };
   }>;
-  sprites: Sprites;
+  sprites: {
+    front_default: string;
+  };
 }
 function App() {
   const [pokemon, setPokemon] = useState<string>("pikachu");
