@@ -74,3 +74,11 @@ img {
   height: 16em;
   padding: 60px 85px 20px 0px;
 }
+
+footer {
+  color: #efedf4b8;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 40px 30px 25px;
+  text-align: right;
+}
