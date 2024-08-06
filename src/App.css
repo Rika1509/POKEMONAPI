@@ -6,6 +6,7 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-image: url(././images/alphaomega.png);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -81,4 +82,28 @@ footer {
   line-height: 18px;
   margin: 40px 30px 25px;
   text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+
+  .container {
+    max-width: 500px;
+  }
+  
+  .divTable {
+    max-width: 400px;
+    margin: 0px 15px 0px 10px;
+  }
+
+  .divTableCell {
+    padding: 5px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 100px 5px 250px;
+  }
 }
